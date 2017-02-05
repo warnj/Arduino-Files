@@ -1,0 +1,22 @@
+
+#######################################
+# Syntax Coloring Map For ArudinoStringEmulation
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+String	KEYWORD1
+
+#######################################
+# Members (KEYWORD2)
+#######################################
+
+length	KEYWORD2
+toInt	KEYWORD2
+toFloat	KEYWORD2
+getBytes	KEYWORD2
+indexOf	KEYWORD2
+substring	KEYWORD2
+concat	KEYWORD2

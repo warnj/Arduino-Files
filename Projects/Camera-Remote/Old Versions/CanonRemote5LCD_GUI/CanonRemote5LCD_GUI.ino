@@ -4,6 +4,9 @@
         top but long press to start taking photots
         bottom but short press to decr # shots
         bottom but long press to change menu selection
+
+
+
      Add menu item for no bulb
      add menu item to change changeminperShot
  */
@@ -273,3 +276,6 @@ void flash(){
   delay(100);
   lcd.display();  
 }
+
+
+

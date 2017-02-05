@@ -19,7 +19,6 @@ message = ""
 
 # Define some colors
 WHITE = (255, 255, 255)
-PURPLE = (60, 45, 112)
 GOLD = (213, 202, 148)
 RED = (225, 40, 40)
 GREEN = (0, 120, 5)
@@ -41,8 +40,7 @@ POT = pygame.Rect(340, 20, 125, 200)
 pygame.display.set_caption("Camera Remote")
 font = pygame.font.SysFont('Arial', 25)
 
-# Used to manage how fast the screen updates
-clock = pygame.time.Clock()
+clock = pygame.time.Clock()   # Used to manage how fast the screen updates
 
 # Method to redraw the default, commonly used screen
 def redraw_screen():
@@ -124,10 +122,8 @@ while not done:
         stop_flag = 1
         if SHUTTERCOLOR == BLACK:
             stop_flag = 0
-        # send message in form of characters for the potentiometer flag, emergency stop flag, angle, and speed
-        message = ''.join([chr(pot_flag), chr(stop_flag)])
+        message = 'Sending: '.join([chr(pot_flag), chr(stop_flag)])
         print(message)
-        print(pot_flag)
         sock.sendto(message, (TARGET_IP, UDP_PORT))
         pygame.time.wait(10)
 

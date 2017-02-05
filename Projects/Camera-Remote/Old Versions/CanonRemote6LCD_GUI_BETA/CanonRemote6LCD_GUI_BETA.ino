@@ -4,6 +4,9 @@ top but to incr # shots
 top but long press to start taking photots
 bottom but short press to decr # shots
 bottom but long press to change menu selection
+
+
+
 Add menu item for no bulb
 add menu item to change changeminperShot
 */
@@ -30,9 +33,9 @@ bool entermenu = true;
 int menu = 0;
 byte buttonState = 0;
 
-int numShots = 200;
+int numShots = 900;
 int lastnumShots = 1;
-float minperShot = 1;
+float minperShot = 2;
 float lastminperShot = 1;
 float changeminperShot = 0;    // how much to change the exposure time on subsequent exposures
 float lastchminperShot = 0;
@@ -161,10 +164,10 @@ void loop() {
         for (int i=0; i <= numShots; i++) {
             lcd.noDisplay();
             sendInfraredSignal();
-            if (i < numShots) delay(minperShot * 60000);    //ms to minutes = 60000
+            if (i < numShots) delay((int)(minperShot * 60000));    //ms to minutes = 60000
             sendInfraredSignal();                             // dont want this if not in bulb - then need to know length of cam exposure
             minperShot = minperShot + changeminperShot;
-            delay (10000);                                    // between shots
+            delay (5000);                                    // between shots
         }
         entermenu = true;
         menu = 0;
@@ -249,3 +252,6 @@ byte DoubleButPressShortOrLong(int inputPin, int inputPin2, int duration){
         delay(20);
     }
 }
+
+
+

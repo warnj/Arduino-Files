@@ -1,0 +1,21 @@
+
+#######################################
+# Syntax Coloring Map For SoftwareRS485
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Debounce	KEYWORD1
+
+#######################################
+# Members (KEYWORD2)
+#######################################
+
+attach	    KEYWORD2
+setInterval	KEYWORD2
+update	    KEYWORD2
+debounced	KEYWORD2
+risingEdge	KEYWORD2
+fallingEdge	KEYWORD2

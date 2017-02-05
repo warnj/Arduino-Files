@@ -1,0 +1,41 @@
+
+#######################################
+# Syntax Coloring Map For SoftwareRS485
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CSerialPacketManager KEYWORD1
+errorCode            KEYWORD1
+SoftwareRS485        KEYWORD1
+
+#######################################
+# Members (KEYWORD2)
+#######################################
+
+STX                 KEYWORD2
+ETX                 KEYWORD2
+ERR_NONE            KEYWORD2
+ERR_BUF_OVERFLOW    KEYWORD2
+ERR_BAD_CRC         KEYWORD2
+ERR_BAD_NIBBLE      KEYWORD2
+
+begin               KEYWORD2
+end                 KEYWORD2
+reset               KEYWORD2
+update              KEYWORD2
+sendMsg             KEYWORD2
+serialBegin         KEYWORD2
+serialEnd           KEYWORD2
+serialAvailable     KEYWORD2
+serialReadByte      KEYWORD2
+serialWriteByte     KEYWORD2
+timestamp           KEYWORD2
+available           KEYWORD2
+getData             KEYWORD2
+getLength           KEYWORD2
+getLastError        KEYWORD2
+getErrorCount       KEYWORD2
+getPacketStartTime  KEYWORD2
