@@ -11,6 +11,6 @@ void loop() {
   if(tonevalue >= 12000) {
     tonevalue = 40;
   }
-tone(11, tonevalue);
-delay(3);
+  tone(11, tonevalue);
+  delay(3);
 }
